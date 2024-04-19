@@ -1,0 +1,416 @@
+{
+    "series": {
+        "beef_adults": {
+            "overview": [
+                {
+                    "columns": [
+                        "IT"
+                    ],
+                    "year_back": 5
+                },
+                {
+                    "columns": [
+                        "DE",
+                        "BE",
+                        "FR",
+                        "IT"
+                    ],
+                    "year_back": 5
+                },
+                {
+                    "columns": [
+                        "IT"
+                    ],
+                    "year_back": 35
+                },
+                {
+                    "columns": [
+                        "DE",
+                        "BE",
+                        "FR",
+                        "IT"
+                    ],
+                    "year_back": 35
+                }
+            ],
+            "forecasting": {
+                "target_attribute_forecasting": "IT",
+                "frequency_pandas_format": "W-MON",
+                "time_future_predictions": 10,
+                "training_epochs": 3,
+                "input_chunk_length": 52
+            },
+            "network": {},
+            "simulation": {
+                "settings": [
+                    {
+                        "shock_steps": 3,
+                        "nodi_sorgente": [
+                            "DE"
+                        ],
+                        "nodi_target": [
+                            "IT"
+                        ],
+                        "nodi_sorgente_desc": {
+                            "Italiano": "La Germania",
+                            "Inglese": "Germany"
+                        },
+                        "nodi_target_desc": {
+                            "Italiano": "l'Italia",
+                            "Inglese": "Italy"
+                        }
+                    },
+                    {
+                        "shock_steps": 3,
+                        "nodi_sorgente": [
+                            "FR"
+                        ],
+                        "nodi_target": [
+                            "IT"
+                        ],
+                        "nodi_sorgente_desc": {
+                            "Italiano": "La Francia",
+                            "Inglese": "France"
+                        },
+                        "nodi_target_desc": {
+                            "Italiano": "l'Italia",
+                            "Inglese": "Italy"
+                        }
+                    },
+                    {
+                        "shock_steps": 3,
+                        "nodi_sorgente": [
+                            "BE"
+                        ],
+                        "nodi_target": [
+                            "IT"
+                        ],
+                        "nodi_sorgente_desc": {
+                            "Italiano": "Il Belgio",
+                            "Inglese": "Belgio"
+                        },
+                        "nodi_target_desc": {
+                            "Italiano": "l'Italia",
+                            "Inglese": "Italy"
+                        }
+                    }
+                ],
+                "list_steps": [
+                    10
+                ],
+                "list_intensita_messaggi": [
+                    10
+                ],
+                "list_simulazioni": [
+                    50
+                ],
+                "column_array_values_excel": "values",
+                "column_array_values_excel_P": "values_percentage",
+                "column_array_values_excel_C": "values_cumulative",
+                "column_array_values_excel_CP": "values_cumulative_percentage"
+            },
+            "pdf": {
+                "Italiano": {
+                    "settore": [
+                        "della carne di manzo",
+                        "carne di manzo"
+                    ],
+                    "series_utilized_training_nn": [
+                        "prezzo della carne di manzo",
+                        "inflazione nei paesi europei (Fonte: Banca Mondiale)",
+                        "PIL dei Paesi europei (Fonte: Banca Mondiale)"
+                    ]
+                },
+                "Inglese": {
+                    "settore": [
+                        "beef",
+                        "beef"
+                    ],
+                    "series_utilized_training_nn": [
+                        "beef meat price",
+                        "inflation in European countries (Source: World Bank)",
+                        "GDP of European countries (Source: World Bank)"
+                    ]
+                }
+            },
+            "generic":{
+                "dataset":"DatasetClean_beef_adults.csv"
+            }
+        },
+        "beef_calves": {
+            "overview": [
+                {
+                    "columns": [
+                        "IT"
+                    ],
+                    "year_back": 5
+                },
+                {
+                    "columns": [
+                        "DE",
+                        "BE",
+                        "FR",
+                        "IT"
+                    ],
+                    "year_back": 5
+                },
+                {
+                    "columns": [
+                        "IT"
+                    ],
+                    "year_back": 35
+                },
+                {
+                    "columns": [
+                        "DE",
+                        "BE",
+                        "FR",
+                        "IT"
+                    ],
+                    "year_back": 35
+                }
+            ],
+            "forecasting": {
+                "target_attribute_forecasting": "IT",
+                "frequency_pandas_format": "W-MON",
+                "time_future_predictions": 10,
+                "training_epochs": 3,
+                "input_chunk_length": 52
+            },
+            "network": {},
+            "simulation": {
+                "settings": [
+                    {
+                        "shock_steps": 3,
+                        "nodi_sorgente": [
+                            "DE"
+                        ],
+                        "nodi_target": [
+                            "NL"
+                        ],
+                        "nodi_sorgente_desc": {
+                            "Italiano": "La Germania",
+                            "Inglese": "Germany"
+                        },
+                        "nodi_target_desc": {
+                            "Italiano": "l'Olanda",
+                            "Inglese": "Netherlands"
+                        }
+                    },
+                    {
+                        "shock_steps": 3,
+                        "nodi_sorgente": [
+                            "FR"
+                        ],
+                        "nodi_target": [
+                            "IT"
+                        ],
+                        "nodi_sorgente_desc": {
+                            "Italiano": "La Francia",
+                            "Inglese": "France"
+                        },
+                        "nodi_target_desc": {
+                            "Italiano": "l'Olanda",
+                            "Inglese": "Netherlands"
+                        }
+                    },
+                    {
+                        "shock_steps": 3,
+                        "nodi_sorgente": [
+                            "BE"
+                        ],
+                        "nodi_target": [
+                            "IT"
+                        ],
+                        "nodi_sorgente_desc": {
+                            "Italiano": "Il Belgio",
+                            "Inglese": "Belgio"
+                        },
+                        "nodi_target_desc": {
+                            "Italiano": "l'Olanda",
+                            "Inglese": "Netherlands"
+                        }
+                    }
+                ],
+                "list_steps": [
+                    10
+                ],
+                "list_intensita_messaggi": [
+                    10
+                ],
+                "list_simulazioni": [
+                    50
+                ],
+                "column_array_values_excel": "values",
+                "column_array_values_excel_P": "values_percentage",
+                "column_array_values_excel_C": "values_cumulative",
+                "column_array_values_excel_CP": "values_cumulative_percentage"
+            },
+            "pdf": {
+                "Italiano": {
+                    "settore": [
+                        "della carne di vitello",
+                        "carne di vitello"
+                    ],
+                    "series_utilized_training_nn": [
+                        "prezzo della carne di vitello",
+                        "inflazione nei paesi europei (Fonte: Banca Mondiale)",
+                        "PIL dei Paesi europei (Fonte: Banca Mondiale)"
+                    ]
+                },
+                "Inglese": {
+                    "settore": [
+                        "veal",
+                        "veal"
+                    ],
+                    "series_utilized_training_nn": [
+                        "veal meat price",
+                        "inflation in European countries (Source: World Bank)",
+                        "GDP of European countries (Source: World Bank)"
+                    ]
+                }
+            },
+            "generic":{
+                "dataset":"DatasetClean_beef_calves.csv"
+            }
+        }
+    },
+    "pdf": {
+        "Italiano": {
+            "custom": {
+                "next_Art": "Nelle prossime",
+                "next_art": "nelle prossime",
+                "forecasting_unit": "settimane",
+                "forecasting_range": "10",
+                "forecasting_target_art": "in Italia",
+                "forecasting_target": "Italia",
+                "table_date": "Data",
+                "table_price_unit": "(Euro per 100 Kg)",
+                "andamento_desc": [
+                    "aumenterà",
+                    "resterà invariato",
+                    "diminuirà"
+                ],
+                "andamento_desc1": [
+                    "aumento",
+                    "resterà invariato",
+                    "abbassamento"
+                ]
+            },
+            "static": {
+                "title(E)": "Il mercato europeo della carne, analisi e previsioni dei prezzi in Italia e in Europa",
+                "image_desc": "<i>Immagine creata con Image Creator da designer, con tecnologia di intelligenza artificiale DALL-E</i>",
+                "date_report": "<i>Report automatico generato in data: {0}</i>",
+                "metodology_title1": "<b>I dati</b>",
+                "metodology_data(E)": "I dati riportati in questi report sono la sintesi di dati pubblici e ufficiali, tra cui quelli di Agridata, il portale dell’Unione Europea che riporta, con cadenza settimanale, i valori di mercato dei prodotti agricoli per i Paesi dell’Unione Europea con sequenze storiche che superano i 30 anni. I dati sono quindi trattati attraverso tecniche di intelligenza artificiale e di network analisi, con una metodologia che è in diversi casi di proprietà BAIA, come avviene con l'Event Propagation System - EPS©",
+                "metodology_title2": "<b>Le previsioni</b>",
+                "metodology_forcast(E)": "Le previsioni sul prezzo futuro sono realizzate partendo dalla serie storica dei prezzi degli ultimi decenni su cui è applicata una rete neurale di tipo LSTM (Long short-term memory), ossia un modello di machine learning che realizza previsioni basandosi sui dati passati. In questo caso la rete LSTM è stata addestrata con milioni di parametri per fornire risultati sul futuro che siano i più affidabili possibili.",
+                "metodology_title3": "<b>Gli scenari di rischio</b>",
+                "metodology_risk(E)": "Gli scenari di rischio proposti in questo report valutano l’impatto che certi fenomeni a livello europeo potrebbero avere sui prezzi in Italia. Le quotazioni nel nostro Paese, infatti, sono collegate e dipendono da ciò che avviene anche nelle altre nazioni. Il modello di BAIA esplicita tali interdipendenze costruendo un network che collega i diversi Stati. I valori delle interdipendenze tra i Paesi sono calcolati tramite il Predictive Power Score (PPS): un indice che valuta quanto una serie di valori (per esempio i prezzi settimanali di un bene in un certo Paese) può dare informazioni in anticipo su un’altra serie statistica (per esempio i prezzi settimanali in Italia). Il network non solo rende manifeste queste dipendenze, ma consente anche di costruire degli scenari di rischio, ossia di prevedere cosa potrebbe accadere se uno dei Paesi del network decidesse ad esempio di aumentare il prezzo di un bene in maniera improvvisa, o si trovasse in difficoltà di approvvigionamento. Il modello sviluppato da BAIA consente infatti di capire se vi sarebbero delle conseguenze sui prezzi in Italia a seguito di tali avvenimenti. Il modello di BAIA sfrutta nozioni di epidemiologia, network analisi e agent based model: tutte discipline utili nella definizione di scenari di rischio, e che qui sono applicate in un contesto economico. Il report prende in considerazione il rischio generato da alcuni dei Paesi del network: a richiesta l’analisi può essere estesa su altri Paesi di interesse.",
+                "summary_title": "<b>Sintesi dei risultati</b>",
+                "summary_desc": "Qui riportiamo i risultati principali contenuti nel report.",
+                "summary_title2": "<b>Previsioni</b>",
+                "summary_prev": "<<'next_Art'>> <<'forecasting_range'>> <<'forecasting_unit'>>  il prezzo <<'settore_art'>> <<'forecasting_target_art'>> <b><<'andamento_prezzo_desc'>></b>.",
+                "summary_title3": "<b>Gli scenari di rischio (<<'settore_art2'>>)</b>",
+                "summary_risk_desc": "Di seguito i risultati degli scenari analizzati. ",
+                "summary_risk1": "<b>Caso {0}</b>: <<'nodi_sorgente_desc'>> aumenta il prezzo <<'settore_art'>> improvvisamente e in modo significativo.",
+                "summary_risk2": "La probabilità che tale aumento avvenga anche <<'forecasting_target_art'>>, nel giro di poche <<'forecasting_unit'>>, è del <<'raggiungimento_nodo_target'>>%.",
+                "overview_title": "<b>Il prezzo <<'settore_art'>></b>",
+                "overview_desc(E)": "In questa sezione sono riportati i valori del mercato europeo <<'settore_art'>>, calcolati in Euro per 100 Kg. I dati riportati sono quelli ufficiali di Agridata.",
+                "overview_title1": "<b>Prezzi medi negli ultimi <<'overview_year1'>> anni</b>",
+                "overview_img1_desc(E)": "<i>I prezzi <<'settore_art'>> in Italia negli ultimi 5 anni <<'table_price_unit'>></i>",
+                "overview_img2_desc(E)": "<i>I prezzi <<'settore_art'>> in Belgio, Francia, Germania, Italia negli ultimi 5 anni <<'table_price_unit'>></i>",
+                "overview_title2": "<b>Prezzi medi negli ultimi <<'overview_year2'>> anni</b>",
+                "overview_img3_desc(E)": "<i>I prezzi <<'settore_art'>> in Italia negli ultimi 35 anni <<'table_price_unit'>></i>",
+                "overview_img4_desc(E)": "<i>I prezzi <<'settore_art'>> in Belgio, Francia, Germania, Italia negli ultimi 35 anni <<'table_price_unit'>></i>",
+                "forecasting_title": "<b>Previsioni prezzi futuri (<<'settore_art2'>>)</b>",
+                "forecasting_desc1": "Per prevedere l’andamento futuro dei prezzi <<'settore_art'>> <<'forecasting_target_art'>> sono stati considerati diversi fattori:",
+                "forecasting_desc2": "Le previsioni effettuate con la rete neurale rilevano che <<'next_art'>> <<'forecasting_range'>> <<'forecasting_unit'>> il prezzo <<'settore_art'>> <<'forecasting_target_art'>> <b><<'andamento_prezzo_desc'>></b>",
+                "forecasting_graph_desc": "Il grafico seguente mostra come sono state ottenute queste previsioni.",
+                "forecasting_spiegazione": "La linea blu collega e segue i dati usati per addestrare la macchina; la linea rossa acqua rappresenta le previsioni fatte dalla rete neurale su questi dati. La linea arancione sono i valori reali che il prezzo <<'settore_art'>> ha avuto nel periodo usato per verificare l'attendibilità della rete neurale. <br/> Come si vede, l'andamento previsto dell'intelligenza artificiale nei prezzi segue quello reale, ogni aumento dei prezzi avvenuto nella realtà sarebbe stato previsto dalla macchina, così come ogni diminuzione. <br/> La linea verde si riferisce ad una previsione futura: <<'next_art'>> <<'forecasting_range'>> <<'forecasting_unit'>> vi sarà un <<'andamento_prezzo_desc1'>> del <<'andamento_prezzo_value'>>% nel prezzo <<'settore_art'>> <<'forecasting_target_art'>>. <br/> L'errore percentuale calcolato  su queste previsioni è del <<'andamento_prezzo_errore'>>%, ma ciò che interessa  è la tendenza. <<'next_Art'>> <<'forecasting_range'>> <<'forecasting_unit'>>, quindi il valore <<'settore_art'>> rispetto all'attuale si modificherà, tenendo conto anche dell'errore percentuale previsto, in una fascia compresa tra <<'low_range'>>% e <<'high_range'>>%.",
+                "forecasting_tabella": "La tabella seguente riporta <b> il valore medio del prezzo <<'settore_art'>></b> <<'forecasting_target_art'>> nelle 10 <<'forecasting_unit'>> antecedenti il report.",
+                "forecasting_tabella_2": "La tabella seguente riporta <b>le previsioni del valore medio del prezzo <<'settore_art'>></b> <<'forecasting_target_art'>> per le prossime 5 <<'forecasting_unit'>>",
+                "network_title1": "<b>L’influenza dei prezzi tra i diversi Paesi (<<'settore_art2'>>)</b>",
+                "netwrok_correlation_title": "<b>Correlation Matrix</b>",
+                "network_pps_desc": "Il grafico seguente, mostra i valori del Predictive Power Score (PPS) tra i diversi Paesi europei, ossia l’influenza che i prezzi di un Paese hanno su quelli di un altro. L’indice varia da 0 (nessuna influenza) a 1 (massima influenza).",
+                "network_heatmap_desc": "Più il blu è scuro, maggiore è l'influenza, mentre più il rosso è scuro minore è l'influenza. La tabella consente di misurare esattamente quanto vale quella influenza, e quindi costruire un modello di  simulazione per prevedere il rischio di aumenti, sulla base di quanto accade in altri Paesi.",
+                "network_title2": "<b>Il network</b>",
+                "network_desc": "Partendo dalla misura dell'influenza tra i diversi Paesi europei si costruisce il grafo che mostra la dinamica dell’evoluzione dei prezzi sulla base delle connessioni tra i Paesi; ossia come le variazioni nel prezzo di un Paese influenzano anche le quotazioni delle altre nazioni.",
+                "simulation_title": "<b>Gli scenari di rischio</b>",
+                "simulation_desc": "Il Software di BAIA proprietario  Event Propagation Simulator - EPS© consente di creare scenari di rischio a partire dal grafo realizzato nella pagina precedente. Questi scenari permettono di capire l’effetto che avrebbe <<'forecasting_target_art'>> un aumento dei prezzi effettuato in uno specifico Paese, consentendo di calcolare le probabilità di una crescita anche in Italia dopo un certo periodo.",
+                "simulation_title2": "<b>Risk Scenarios (<<'settore_art2'>>)</b>",
+                "simulation_shock_title": "<b>Caso {0}: <<'nodi_sorgente_desc'>> aumenta il prezzo <<'settore_art'>> improvvisamente</b>",
+                "simulation_shock_desc1": "Il grafico seguente, realizzato effettuando <<'n_simulation'>> simulazioni, mostra il numero dei Paesi Europei che mano a mano aumentano i loro prezzi. ",
+                "simulation_shock_desc2": "Il grafico seguente, realizzato effettuando <<'n_simulation'>> simulazioni, mostra come varia la probabilità che, con il passare del tempo, anche l'<<'forecasting_target'>> aumenti il prezzo <<'settore_art'>>. In particolare, la probabilità che l'<<'forecasting_target'>> aumenti il prezzo <<'settore_art'>> è del <<'raggiungimento_nodo_target'>>% dopo un intervallo di tempo sufficientemente significativo, corrispondente a tre steps del programma, o a qualche settimana."
+            }
+        },
+        "Inglese": {
+            "custom": {
+                "next_Art": "In the next",
+                "next_art": "in the next",
+                "forecasting_unit": "weeks",
+                "forecasting_range": "10",
+                "forecasting_target_art": "in Italy",
+                "forecasting_target": "Italy",
+                "table_date": "Data",
+                "table_price_unit": "(Euros per 100 Kg)",
+                "andamento_desc": [
+                    "will increase",
+                    "will remain unchanged",
+                    "will decrease"
+                ],
+                "andamento_desc1": [
+                    "will increase",
+                    "will remain unchanged",
+                    "will decrease"
+                ]
+            },
+            "static": {
+                "title(E)": "The European Meat Market: Analysis and Price Forecast in Italy and Europe",
+                "image_desc": "<i>Image created with Image Creator by designers, using DALL-E artificial intelligence technology.</i>",
+                "date_report": "<i>Automatic report generated on: {0}</i>",
+                "metodology_title1": "<b>The data</b>",
+                "metodology_data(E)": "The data presented in these reports are a synthesis of public and official data, including that from Agridata, the European Union portal that reports market values of agricultural products for EU countries on a weekly basis, with historical sequences spanning over 30 years. The data is processed through artificial intelligence techniques and network analysis, using a methodology that, in several cases, belongs to BAIA, like Event Propagatin Simulator - EPS©",
+                "metodology_title2": "<b>Forecasts</b>",
+                "metodology_forcast(E)": "Forecasts on future prices are generated from historical price series of recent decades, utilizing a Long Short-Term Memory (LSTM) neural network model. This machine learning model predicts future outcomes based on past data. In this case, the LSTM network has been trained with millions of parameters to provide the most reliable future results possible.",
+                "metodology_title3": "<b>Risk scenarios</b>",
+                "metodology_risk(E)": "The risk scenarios proposed in this report assess the potential impact that certain phenomena at the European level might have on prices in Italy. Prices in our country are interconnected and depend on events in other nations. The BAIA model explicitly highlights these interdependencies by constructing a network that links various states. The values of interdependencies between countries are calculated using the Predictive Power Score (PPS): an index evaluating how much a set of values (e.g., weekly prices of a good in a certain country) can provide information in advance about another statistical series (e.g., weekly prices in Italy). The network not only reveals these dependencies but also enables the construction of risk scenarios, predicting potential outcomes if one of the network's countries, for instance, decides to abruptly increase a commodity's price or faces supply difficulties. The BAIA model allows an understanding of the potential consequences on prices in Italy following such events. BAIA's model leverages concepts from epidemiology, network analysis, and agent-based models—disciplines that are valuable in defining risk scenarios, here applied in an economic context. The report considers the risk generated by some of the network's countries and, upon request, the analysis can be extended to other countries of interest.",
+                "summary_title": "<b>Main Findings</b>",
+                "summary_desc": "Here we present the main findings outlined in the report.",
+                "summary_title2": "<b>Forecasts</b>",
+                "summary_prev": "<<'next_Art'>> <<'forecasting_unit'>> <<'forecasting_range'>> the price <<'settore_art'>> <<'forecasting_target_art'>> is expected to <b><<'andamento_prezzo_desc'>></b>.",
+                "summary_title3": "<b>Risk Scenarios (<<'settore_art2'>>)</b>",
+                "summary_risk1": "<b>Scenario {0}</b>: <<'nodi_sorgente_desc'>> abruptly and significantly increases the price <<'settore_art'>>",
+                "summary_risk2": "The probability of such an increase occurring <<'forecasting_target_art'>>, within a few <<'forecasting_unit'>> is <<'raggiungimento_nodo_target'>>%.",
+                "overview_title": "<b>The price <<'settore_art'>></b>",
+                "overview_desc(E)": "This section presents the values of the European meat market, calculated in Euros per 100 Kg. The reported data are the official ones from Agridata.",
+                "overview_title1": "<b>Average prices over the last  <<'overview_year1'>> years</b>",
+                "overview_img1_desc(E)": "<i>Meat prices in Italy over the last 5 years (Euro per 100 kg)</i>",
+                "overview_img2_desc(E)": "<i>Average meat prices in Austria, Belgium, France, Spain, Italy over the last 5 years (Euro per 100 kg)</i>",
+                "overview_title2": "<b>Average prices over the last  <<'overview_year2'>> years</b>",
+                "overview_img3_desc(E)": "<i>Meat prices in Italy over the last 35 years (Euro per 100 kg)</i>",
+                "overview_img4_desc(E)": "<i>Average meat prices in Austria, Belgium, France, Spain, Italy over the last 35 years (Euro per 100 kg)</i>",
+                "forecasting_title": "<b>Neural Network Forecasting Future Prices</b>",
+                "forecasting_desc1": "To predict the future trend <<'settore_art'>> prices <<'forecasting_target_art'>>, more factors have been taken into account:",
+                "forecasting_desc2": "The forecasts made with the neural network reveal that <<'next_art'>> <<'forecasting_range'>> <<'forecasting_unit'>>, the price <<'settore_art'>> <<'forecasting_target_art'>> <b><<'andamento_prezzo_desc'>></b>",
+                "forecasting_graph_desc": "The following graph illustrates how these predictions were derived.",
+                "forecasting_spiegazione": "The black line connects and follows the data used to train the neural network machine; the aqua green line represents the predictions made by the neural network based on this data. The light blue line represents the actual values that meat prices had during the period used to verify the reliability of the neural network. <br/> As seen, the projected trend of artificial intelligence in prices mirrors the real trend: every price increase in reality would have been predicted by the machine, as well as every decrease. <br/> The purple line refers to a future prediction: <<'next_art'>> <<'forecasting_range'>> <<'forecasting_unit'>> there will be a <<'andamento_prezzo_desc'>> of <<'andamento_prezzo_value'>>% in the <<'settore_art'>> prices <<'forecasting_target_art'>>. <br/> The percentage error calculated for these predictions is <<'andamento_prezzo_errore'>>%, but what matters is the trend. <<'next_Art'>> <<'forecasting_range'>> <<'forecasting_unit'>>, therefore, the value <<'settore_art'>> compared to the current price will change within a range of <<'low_range'>>% e <<'high_range'>>%.",
+                "forecasting_tabella": "The following table shows <b>the average value <<'settore_art'>> prices</b> <<'forecasting_target_art'>> for the next 10 <<'forecasting_unit'>> before the report date.",
+                "forecasting_tabella_2": "The following table presents <b>forecasts of the average <<'settore_art'>> prices</b> <<'forecasting_target_art'>> for the next 5 <<'forecasting_unit'>>.",
+                "network_title1": "<b>Prices Influence Among Different Countries (<<'settore_art2'>>)</b>",
+                "netwrok_correlation_title": "<b>Correlation Matrix</b>",
+                "network_pps_desc": "The following graph displays the values of the Predictive Power Score (PPS) among various European countries, which indicates the influence that one country's prices have on those of another. The index ranges from 0 (no influence) to 1 (maximum influence).",
+                "network_heatmap_desc": "The darker the blue, the stronger the relationship among different European countries: the darker the red, the weaker this relationship. The table allows for an exact measurement of that reciprocal influence, thus enabling the construction of a simulation model to predict the risk of price increases based on what occurs in other countries.",
+                "network_title2": "The network",
+                "network_desc": "Starting from the measurement of the relationship among different European countries, a graph is constructed to display the dynamics of price evolution based on connections between countries; that is, how changes in one country's prices may impact the quotations of other nations.",
+                "simulation_title": "<b>Risk Scenarios</b>",
+                "simulation_desc": "BAIA's proprietary software, Event Propagation Simulator - EPS©, allows the creation of risk scenarios based on the graph constructed on the previous page. These scenarios help to understand the effect that a price increase in a specific country would have on Italy, enabling the calculation of the probabilities of a subsequent increase in Italy after a certain period.",
+                "simulation_title2": "<b>Risk Scenarios (<<'settore_art2'>>)</b>",
+                "simulation_shock_title": "<b>Scenario {0}: <<'nodi_sorgente_desc'>> suddenly increases <<'settore_art'>> prices</b>",
+                "simulation_shock_desc1": "The following chart, derived from conducting <<'n_simulation'>> simulations, illustrates the number of European countries gradually increasing their prices.",
+                "simulation_shock_desc2": "The subsequent chart, based on <<'n_simulation'>> simulations, demonstrates how the probability of Italy increasing meat prices changes over time. Specifically, the probability of Italy increasing meat prices stands at <<'raggiungimento_nodo_target'>>% after a sufficiently significant time interval, corresponding to three program steps or a few weeks."
+            }
+        }
+    },
+    "type":"agridata"
+}

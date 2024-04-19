@@ -1,0 +1,154 @@
+{
+    "series":{
+        "italy_vs_eu":{
+            "forecasting":{
+                "target_attribute_forecasting": null,
+                "frequency_pandas_format": "MS",
+                "time_future_predictions": 6,
+                "input_chunk_length": 12,
+                "dataset":"DatasetCleanIT.csv",
+                "is_target_eu":true
+            },
+            "pdf":{
+                "top_n":5,
+                "desc_sum_countries": "EU"
+            }
+        },
+        "italy_vs_not_eu":{
+            "forecasting":{
+                "target_attribute_forecasting": null,
+                "frequency_pandas_format": "MS",
+                "time_future_predictions": 6,
+                "input_chunk_length": 12,
+                "dataset":"DatasetCleanIT.csv",
+                "is_target_eu":false
+            },
+            "pdf":{
+                "top_n":10,
+                "desc_sum_countries": "NOT EU"
+            }
+        },
+        "eu_vs_not_eu":{
+            "forecasting":{
+                "target_attribute_forecasting": null,
+                "frequency_pandas_format": "MS",
+                "time_future_predictions": 6,
+                "input_chunk_length": 12,
+                "dataset":"DatasetCleanEU.csv",
+                "is_target_eu":false
+            },
+            "pdf":{
+                "top_n":10,
+                "desc_sum_countries": "NOT EU"
+            }
+        }
+    },
+    "pdf": {
+        "Inglese": {
+            "custom": {
+                "next_Art": "Nelle prossime",
+                "next_art": "nelle prossime",
+                "forecasting_unit": "settimane",
+                "forecasting_range": "10",
+                "forecasting_target_art": "in Italia",
+                "forecasting_target": "Italia",
+                "table_date": "Data",
+                "table_price_unit": "(Euro per 100 Kg)",
+                "andamento_desc": [
+                    "aumenterà",
+                    "andamento invariato",
+                    "diminuira"
+                ],
+                "andamento_desc1": [
+                    "aumento",
+                    "andamento invariato",
+                    "abbassamento"
+                ]
+            },
+            "static": {
+                "title(E)": "The plywood market in Italy and Europe: analysis and forecasts",
+                "image_desc": "<i>Image created with Image Creator by designers, using DALL-E artificial intelligence technology</i>",
+                "date_report": "<i>Automatically generated report created on {0}</i>",
+                
+                "premessa":"Premessa",
+                "metodology_title1": "<b>The data</b>",
+                "metodology_data(E)": "The data reported in these reports are summaries of public and official data, including those from Eurostat, the European Union's statistics portal that reports monthly market export values of EU countries with historical sequences spanning over 30 years. The data are processed using artificial intelligence techniques and network analysis, with a methodology that in several cases is proprietary to BAIA",
+                "metodology_title2": "<b>The forecasts for Italy</b>",
+                "metodology_forcast(E)": "The report provides forecasts on the trend of plywood exports from Italy to the European and non-European markets. These forecasts are generated based on the historical series of export values ​​from the last decades, on which a Long short-term memory (LSTM) neural network is applied. LSTM is a type of machine learning model that makes predictions based on past data. In this case, the LSTM network has been trained with millions of parameters to provide the most reliable future results. For the forecasts, in addition to export data, the GDP of the destination countries of the exports, as well as their inflation rate, have been considered. Tables showing export values for the top ten countries with the highest absolute value for Italian exports are then provided. A series of other analyses make forecasts, using the same methods and technologies, on market shares, describing how market shares will vary among EU actors in the next three months.",
+                
+                "forecasting_title_1":"Market forecasts on plywood exports from Italy to individual European countries",
+                "forecasting_desc_1":"The following graph shows the trend of the value of exports from Italy to individual EU countries. The last three data points represent the forecasts obtained with neural network. Values are in current Euros",
+                "forecasting_table_1":"The following table displays numerical forecasts of Italy's plywood exports to EU countries for the next three months. The table lists the top five countries by absolute value. ",
+                "forecasting_bar_1": "The value of Italian exports to European countries (Forecasts: {0})",
+                "forecasting_pie_1": "Market shares of Italian exports to European countries (Forecasts: {0})",
+                
+                "forecasting_title_2":"Market forecasts for plywood exports from Italy to the non-European market",
+                "forecasting_desc_2":"The following graph shows the trend of the value of exports from Italy to the non-European market. The last three data points represent the forecasts obtained with a neural network. Values are in current Euros. ",
+                "forecasting_table_2":"The following table displays numerical forecasts of Italy's exports to the top 10 non-European countries with the highest values for the next three months",
+                "forecasting_bar_2": "The value of Italian exports to non-European countries (Forecasts: {0})",
+                "forecasting_pie_2": "Market shares of Italian exports to non-European countries (Forecasts: {0})",
+
+                "forecasting_title_3":"Market forecast on plywood exports from European countries to the non-European market.",
+                "forecasting_desc_3":"The following graph shows the trend of the value of plywood exports from the Union countries to the non-European market. The last three data points represent the forecasts obtained with a neural network. Values are in current Euros.",
+                "forecasting_table_3":"The following table displays numerical forecasts of footwear exports from European countries to the non-European market.",
+                "forecasting_bar_3": "Market forecasts for plywood exports from Europe to individual non-European countries (Forecasts: {0})",
+                "forecasting_pie_3": "Market shares of European exports to non-European countries (Forecasts: {0})"
+            }
+        },
+        "Italiano": {
+            "custom": {
+                "settore": "del compensato",
+                "next_Art": "Nelle prossime",
+                "next_art": "nelle prossime",
+                "forecasting_unit": "settimane",
+                "forecasting_range": "10",
+                "forecasting_target_art": "in Italia",
+                "forecasting_target": "Italia",
+                "table_date": "Data",
+                "table_price_unit": "(Euro per 100 Kg)",
+                "andamento_desc": [
+                    "aumenterà",
+                    "andamento invariato",
+                    "diminuira"
+                ],
+                "andamento_desc1": [
+                    "aumento",
+                    "andamento invariato",
+                    "abbassamento"
+                ]
+            },
+            "static": {
+                "title(E)": "Il mercato <<'settore'>> in Italia e in Europa: analisi e previsioni",
+                "image_desc": "<i>Immagine creata con Image Creator da designer, con tecnologia di intelligenza artificiale DALL-E</i>",
+                "date_report": "<i>Report automatico generato in data: {0}</i>",
+
+                "premessa":"Premessa",
+                "metodology_title1": "<b>I dati</b>",
+                "metodology_data(E)": "Certamente! I dati inclusi in questi report sono il risultato di un'attenta sintesi di informazioni provenienti da fonti pubbliche e ufficiali, tra cui spiccano i dati forniti da Eurostat, il portale di statistica dell'Unione Europea che regolarmente aggiorna i valori di mercato relativi alle esportazioni del compensato dei vari Paesi dell'Unione Europea. Questi dati vengono sottoposti a un processo di elaborazione che impiega metodologie avanzate di intelligenza artificiale, garantendo così un'analisi accurata e affidabile delle tendenze di mercato nel settore.",
+                "metodology_title2": "<b>Le previsioni per l'Italia e l'Europa</b>",
+                "metodology_forcast(E)": "Il rapporto costituisce un'analisi esaustiva e dettagliata del futuro delle esportazioni nel settore <<'settore'>> provenienti dall'Italia, sia in direzione del mercato europeo che extraeuropeo. Queste proiezioni sono il risultato di un'analisi approfondita della serie storica delle esportazioni nel settore <<'settore'>> degli ultimi decenni, su cui sono state applicate sofisticate tecniche di previsione basate sull'apprendimento automatico. Il modello sviluppato esamina attentamente le tendenze e le stagionalità presenti nei dati al fine di replicarne l'andamento futuro con la massima precisione possibile. Nel rapporto sono inclusi dettagliati grafici, analisi descrittive e tabelle esplicative che illustrano i valori previsti delle esportazioni per i principali dieci Paesi in base al loro valore assoluto. Inoltre, vengono fornite stime delle quote di mercato, calcolate mediante le previsioni sopracitate, offrendo così una visione completa e dettagliata del panorama delle esportazioni nel settore <<'settore'>>. Tale approccio analitico mira a fornire ai decisori aziendali e agli stakeholder un quadro esaustivo e informativo per supportare strategie e decisioni nel contesto delle esportazioni nel settore <<'settore'>>.",
+                
+                "forecasting_title_1":"Previsioni sulle esportazioni <<'settore'>> dall’Italia verso i singoli Paesi europei",
+                "forecasting_title_2":"Previsioni sulle esportazioni <<'settore'>> dall’Italia verso il mercato extraeuropeo",
+                "forecasting_title_3":"Previsioni sulle esportazioni <<'settore'>> dai Paesi Europei verso il mercato extra-europeo",
+                
+                "forecasting_desc_1":"Nel grafico sottostante, è rappresentato il trend dei valori delle esportazioni <<'settore'>> dall'Italia verso ciascuno dei Paesi comunitari. Le ultime tre voci sono previsioni ottenute attraverso tecniche di machine learning, con i valori espressi in Euro.",
+                "forecasting_desc_2":"Nel grafico sottostante, è rappresentato il trend dei valori delle esportazioni <<'settore'>> dall'Italia verso i Paesi extra-europei. Le ultime tre voci sono previsioni ottenute attraverso tecniche di machine learning, con i valori espressi in Euro.",
+                "forecasting_desc_3":"Nel grafico sottostante, è rappresentato il trend dei valori delle esportazioni <<'settore'>> dall'Europa verso i Paesi extra-europei. Le ultime tre voci sono previsioni ottenute attraverso tecniche di machine learning, con i valori espressi in Euro.",
+                
+                "forecasting_table_1":"Ecco le previsioni quantitative delle esportazioni dall'Italia verso i 5 principali Paesi comunitari per i prossimi tre mesi. La tabella elenca i Paesi in base al valore assoluto delle esportazioni.",
+                "forecasting_table_2":"Ecco le previsioni quantitative delle esportazioni dall'Italia verso i 10 principali Paesi extraeuropei per i prossimi tre mesi. La tabella elenca i Paesi in base al valore assoluto delle esportazioni.",
+                "forecasting_table_3":"Ecco le previsioni quantitative delle esportazioni dall'Europa verso i 10 principali Paesi extra-europei per i prossimi tre mesi. La tabella elenca i Paesi in base al valore assoluto delle esportazioni.",
+                
+                "forecasting_bar_1": "Valore delle esportazioni italiane verso i Paesi europei (Previsioni: {0})",
+                "forecasting_bar_2": "Valore delle esportazioni italiane verso i Paesi extraeuropei (Previsioni: {0})",
+                "forecasting_bar_3": "Valore delle esportazioni europee verso i singoli Paesi extra-europei (Previsioni: {0})",
+                
+                "forecasting_pie_1": "Quote di mercato delle esportazioni italiane verso i Paesi Europei (Previsioni: {0})",
+                "forecasting_pie_2": "Quote di mercato delle esportazioni italiane verso i Paesi Extraeuropei (Previsioni: {0})",
+                "forecasting_pie_3": "Quote di mercato delle esportazioni europee verso i Paesi ExtraEuropei (Previsioni: {0})"
+            }
+        }
+    },
+    "type":"eurostat"
+}
